@@ -1,0 +1,50 @@
+{
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+		"implicit-arrow-linebreak": 0,
+		"no-case-declarations": 0,
+		"react/button-has-type": 0,
+		"react/jsx-one-expression-per-line": 0,
+		"react/jsx-closing-bracket-location": [
+			2,
+			{
+				"nonEmpty": false,
+				"selfClosing": false
+			}
+    ],
+    "import/no-unresolved": 0,
+		"object-curly-newline": 0,
+		"no-tabs": 0,
+		"indent": [0, "tabs"],
+		"react/jsx-indent": [0, "tabs"],
+		"react/jsx-indent-props": [0, "tabs"],
+		"arrow-parens": 0,
+		"no-alert": 2,
+		"no-console": 1,
+		"no-trailing-spaces": 2,
+		"no-unused-vars": 2,
+		"no-underscore-dangle": 2,
+		"import/prefer-default-export": 0,
+		"operator-linebreak": 0,
+  },
+  "globals": {
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true
+  },
+  "parser": "babel-eslint"
+}

@@ -1,0 +1,21 @@
+.form {
+  &-wrapper {
+    box-sizing: border-box;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    padding: 10px;
+    margin-bottom: 12px;
+    position: relative;
+    background-color: #fff;
+ }
+
+  &-container {
+    & button:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    & .form-group {
+      margin-right: 10px;
+    }
+  }
+}

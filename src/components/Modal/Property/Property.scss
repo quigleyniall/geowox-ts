@@ -1,0 +1,36 @@
+.property {
+  &-container {
+  display: flex;
+  }
+
+  &-image-container {
+    box-sizing: border-box;
+    width: 60%;
+  }
+
+  &-image {
+    display: inline-block;
+    width: 500px;
+    height: 370px;
+  }
+
+  &-details {
+    padding: 5px;
+
+    .padding {
+      padding: 10px 0;
+    }
+  }
+
+  &-logo-container {
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--gray);
+    width: auto;
+  }
+
+  &-logo {
+    height:70px;
+    display: inline-block;
+  }
+}

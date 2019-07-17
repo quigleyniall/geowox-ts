@@ -1,0 +1,19 @@
+.form {
+  &-group {
+    background-color: var(--primary-color);
+  }
+
+  &-control {
+    padding: 5px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &-icon {
+    padding: 5px 8px;
+    line-height: 24px;
+    color: #fff;
+    // background-color: var(--primary-color);
+  }
+}
+

@@ -1,0 +1,80 @@
+.circle {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  width: 8px;
+  height: 8px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border: 1px solid rgb(28, 36, 65);
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0s;
+
+  &-Terraced {
+    background-color: #5A76DB;
+  }
+
+  &-Detached {
+    background-color: rgb(223, 39, 39);
+  }
+
+  &-Semi-Detached {
+    background-color: rgb(235, 235, 49);
+  }
+
+  &-Apartment {
+    background-color: rgb(28, 163, 28);
+  }
+
+  &-hover {
+    box-shadow: white 0px 0px 0px 1px inset;
+    width: 24px;
+    height: 24px;
+
+    &-Terraced {
+      background-color: rgb(78, 103, 194);
+      border: 8px solid rgba(59, 80, 160, .6);
+    }
+
+    &-Detached {
+      background-color: rgb(207, 40, 40);
+      border: 8px solid rgba(146, 33, 33, .6);
+    }
+
+    &-Semi-Detached {
+      background-color: rgb(204, 204, 46);
+      border: 8px solid rgba(160, 160, 36, .6);
+    }
+
+    &-Apartment {
+      background-color: rgb(21, 131, 21);
+      border: 8px solid rgba(20, 119, 20, .6);
+    }
+  }
+}
+
+.z-index-low {
+  z-index: 0;
+}
+
+.map-listing {
+  position: absolute;
+  left: -130px;
+  width: 220px;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+
+  & .listing-image {
+    height: 150px;
+  }
+
+  & .listing-image-container {
+    height: 150px;
+  }
+}
+
+
+

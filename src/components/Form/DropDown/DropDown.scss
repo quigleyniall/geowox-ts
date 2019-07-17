@@ -1,0 +1,75 @@
+.dropdown {
+  position: absolute;
+  left: 0;
+  // margin-top: 3px;
+  z-index: 300;
+  min-width: 200px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height .2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+
+  &-title {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+
+  & button {
+    margin-right: 0 !important;
+  }
+
+  .input-margin:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .btn-dropdown {
+    border-right: none !important;
+    border-radius: 0;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+  }
+
+  .button-container:last-child {
+    border-right: 1.5px solid var(--primary-color);
+  }
+
+  .checkbox-container {
+    display: flex;
+    margin-bottom: 15px;
+    padding-left: 10px;
+
+    &:hover {
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+
+    .fa-check-square {
+      background-color: #fff;
+      color: var(--primary-color);
+      line-height: 20px;
+      font-size: 20px;
+    }
+
+    .checkbox-label {
+      line-height: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+.hide {
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.show {
+  max-height: 200px;
+  border: 1px solid var(--gray);
+}
